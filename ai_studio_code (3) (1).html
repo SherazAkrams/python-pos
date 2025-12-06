@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mubeen Digital | Graphic Design & Meta Ads Expert</title>
+    <meta name="description" content="Top-tier Graphic Designing Services and Meta Ads Expert. We provide Digital Marketing Support to elevate your brand identity and ROI.">
+    
+    <!-- Tailwind CSS (via CDN for immediate use) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts (Poppins for premium feel) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb', // Premium Blue
+                            800: '#1e40af',
+                            900: '#0f172a', // Dark Navy
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2563eb;
+            border-radius: 5px;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <!-- <span class="font-bold text-2xl text-brand-800">Mobeen<span class="text-brand-600">Digital</span>.</span> -->
+                    <img src="./image (17) (1) (1).png" alt="fced" width="50%" height="50%">
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-brand-600 font-medium transition">Home</a>
+                    <a href="#services" class="text-gray-700 hover:text-brand-600 font-medium transition">Services</a>
+                    <a href="#portfolio" class="text-gray-700 hover:text-brand-600 font-medium transition">Portfolio</a>
+                    <a href="#about" class="text-gray-700 hover:text-brand-600 font-medium transition">About</a>
+                    <a href="#contact" class="bg-brand-600 text-white px-5 py-2 rounded-full hover:bg-brand-800 transition shadow-lg">Contact Us</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-brand-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <a href="#home" class="block py-3 px-4 text-gray-700 hover:bg-brand-50">Home</a>
+            <a href="#services" class="block py-3 px-4 text-gray-700 hover:bg-brand-50">Services</a>
+            <a href="#portfolio" class="block py-3 px-4 text-gray-700 hover:bg-brand-50">Portfolio</a>
+            <a href="#contact" class="block py-3 px-4 text-brand-600 font-bold">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg min-h-screen flex items-center pt-20 relative overflow-hidden text-white">
+        <!-- Abstract Decoration -->
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-blue-500 opacity-10 rounded-l-full blur-3xl transform translate-x-1/3"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right" data-aos-duration="1000">
+                    <span class="text-brand-500 font-semibold tracking-wider uppercase mb-2 block">Digital Marketing Support</span>
+                    <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+                        Elevate Your Brand with <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Stunning Design</span> & 
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">High-ROI Ads</span>
+                    </h1>
+                    <p class="text-gray-300 text-lg mb-8 max-w-lg">
+                        We combine creative Graphic Designing Services with data-driven Meta Ads strategies to scale your business. Transform clicks into customers today.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="bg-brand-600 hover:bg-brand-500 text-white px-8 py-3 rounded-full text-center font-semibold shadow-lg shadow-blue-500/30 transition transform hover:-translate-y-1">
+                            Get a Free Consultation
+                        </a>
+                        <a href="#portfolio" class="border border-gray-500 hover:border-white text-white px-8 py-3 rounded-full text-center font-semibold transition">
+                            View Portfolio
+                        </a>
+                    </div>
+                    
+                    <div class="mt-10 flex items-center gap-6 text-gray-400 text-sm">
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-green-400"></i> Certified Meta Ads Expert
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-green-400"></i> Premium Visuals
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hidden lg:block relative" data-aos="fade-left" data-aos-duration="1000">
+                    <!-- Placeholder for Hero Image -->
+                    <div class="relative w-full h-[500px]">
+                        <div class="absolute top-10 left-10 w-64 h-80 bg-slate-800 rounded-lg shadow-2xl border border-slate-700 p-4 transform -rotate-6 z-10">
+                            <div class="h-4 w-full bg-slate-700 rounded mb-2"></div>
+                            <div class="h-32 w-full bg-gradient-to-br from-purple-600 to-blue-600 rounded mb-4 flex items-center justify-center text-white"><i class="fab fa-instagram text-4xl"></i></div>
+                            <div class="space-y-2">
+                                <div class="h-2 w-3/4 bg-slate-700 rounded"></div>
+                                <div class="h-2 w-1/2 bg-slate-700 rounded"></div>
+                            </div>
+                        </div>
+                        <div class="absolute top-20 left-40 w-72 h-64 bg-white rounded-lg shadow-2xl p-4 transform rotate-3 z-20 flex flex-col justify-center items-center">
+                            <!-- <div class="text-brand-600 text-5xl mb-2"><i class="fas fa-pen-nib"></i></div>
+                            <h3 class="text-slate-900 font-bold text-xl">Brand Identity</h3>
+                            <p class="text-slate-500 text-sm text-center mt-2">Crafting logos that speak volumes.</p> -->
+                            <img src="./image (17) (1) (1).png" alt="">
+                        </div>
+                         <div class="absolute bottom-20 right-10 w-64 h-40 bg-slate-800 rounded-lg shadow-2xl border border-slate-700 p-4 transform rotate-6 z-0">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-green-400 text-xs">ROAS: 4.5x</span>
+                                <span class="text-white text-xs">Active</span>
+                            </div>
+                            <div class="h-16 w-full bg-slate-700 rounded relative overflow-hidden">
+                                <div class="absolute top-0 left-0 h-full w-2/3 bg-green-500 opacity-20"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-brand-600 font-bold tracking-wide uppercase text-sm mb-2">Our Expertise</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Comprehensive Digital Solutions</h3>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">From visuals that captivate to campaigns that convert. We offer end-to-end digital marketing support.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Graphic Design Card -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition duration-300 border-t-4 border-purple-500" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 text-2xl mb-6">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold text-gray-900 mb-4">Graphic Designing Services</h4>
+                    <p class="text-gray-600 mb-6">We build brand identities that leave a lasting impression. Our design philosophy centers on aesthetics and functionality.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-700"><i class="fas fa-check text-purple-500 mr-3"></i> Custom Logo Design</li>
+                        <li class="flex items-center text-gray-700"><i class="fas fa-check text-purple-500 mr-3"></i> Social Media Posts & Stories</li>
+                        <li class="flex items-center text-gray-700"><i class="fas fa-check text-purple-500 mr-3"></i> Brand Identity & Guidelines</li>
+                        <li class="flex items-center text-gray-700"><i class="fas fa-check text-purple-500 mr-3"></i> Marketing Banners & Flyers</li>
+                        <li class="flex items-center text-gray-700"><i class="fas fa-check text-purple-500 mr-3"></i> Business Cards & Stationery</li>
+                    </ul>
+                </div>
+
+                <!-- Meta Ads Card -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition duration-300 border-t-4 border-blue-500" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-2xl mb-6">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold text-gray-900 mb-4">Meta Ads Expert (FB & Insta)</h4>
+                    <p class="text-gray-600 mb-6">Stop wasting budget on wrong audiences. We use precision targeting and data analysis to maximize your ROAS.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-700"><i class="fas fa-check text-blue-500 mr-3"></i> Campaign Strategy & Setup</li>
+                        <li class="flex items-center text-gray-700"><i class="fas fa-check text-blue-500 mr-3"></i> Advanced Audience Targeting</li>
+                        <li class="flex items-center text-gray-700"><i class="fas fa-check text-blue-500 mr-3"></i> A/B Testing & Optimization</li>
+                        <li class="flex items-center text-gray-700"><i class="fas fa-check text-blue-500 mr-3"></i> Pixel Setup & Conversion Tracking</li>
+                        <li class="flex items-center text-gray-700"><i class="fas fa-check text-blue-500 mr-3"></i> Weekly Performance Reporting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-brand-600 font-bold tracking-wide uppercase text-sm mb-2">Our Work</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Recent Projects</h3>
+            </div>
+
+            <!-- Filter Tabs (Visual Only) -->
+            <div class="flex justify-center mb-10 space-x-4">
+                <button class="px-6 py-2 bg-brand-600 text-white rounded-full text-sm font-semibold">All</button>
+                <button class="px-6 py-2 bg-gray-100 text-gray-600 hover:bg-gray-200 rounded-full text-sm font-semibold transition">Graphic Design</button>
+                <button class="px-6 py-2 bg-gray-100 text-gray-600 hover:bg-gray-200 rounded-full text-sm font-semibold transition">Ads Results</button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Portfolio Item 1 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer" data-aos="zoom-in">
+                    <img src="https://images.unsplash.com/photo-1626785774573-4b7993125651?auto=format&fit=crop&q=80&w=600" alt="Brand Identity" class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                        <h5 class="text-white text-xl font-bold">Tech Startup Branding</h5>
+                        <p class="text-gray-300 text-sm">Logo & Social Kit</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 2 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&q=80&w=600" alt="Product Flyer" class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                        <h5 class="text-white text-xl font-bold">E-Commerce Sale</h5>
+                        <p class="text-gray-300 text-sm">Social Media Campaign Assets</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 3 (Ads Case Study) -->
+                <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer bg-slate-900" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="w-full h-64 flex flex-col items-center justify-center p-6 text-center border-2 border-slate-800">
+                        <i class="fas fa-chart-line text-green-400 text-4xl mb-3"></i>
+                        <h4 class="text-white font-bold text-2xl">350% ROAS</h4>
+                        <p class="text-gray-400 mt-2">Fashion Retailer <br> Facebook Ads Campaign</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                 <p class="text-gray-500 italic">More samples available upon request.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-brand-900 text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <h2 class="text-brand-500 font-bold tracking-wide uppercase text-sm mb-2">About Us</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold mb-6">Creative Visionaries & Marketing Strategists</h3>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        At Mubeen Digital, we believe that great design attracts, but data-driven strategy converts. We are a team dedicated to helping businesses grow in the noisy digital landscape.
+                    </p>
+                    <p class="text-gray-300 mb-8 leading-relaxed">
+                        With specialized expertise in both the artistic side of branding and the analytical side of Meta Ads, we offer a holistic approach to your online presence. Your growth is our metric of success.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="text-4xl font-bold text-brand-500">5+</h4>
+                            <p class="text-sm text-gray-400">Years Experience</p>
+                        </div>
+                        <div>
+                            <h4 class="text-4xl font-bold text-brand-500">100+</h4>
+                            <p class="text-sm text-gray-400">Projects Completed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative" data-aos="fade-left">
+                    <div class="absolute inset-0 bg-brand-500 blur-3xl opacity-20"></div>
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=600" alt="Team working" class="relative rounded-lg shadow-2xl border-4 border-brand-800 rotate-2 hover:rotate-0 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden">
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                    <!-- Contact Info -->
+                    <div class="bg-brand-600 p-10 text-white flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-6">Get In Touch</h3>
+                            <p class="text-blue-100 mb-8">Ready to start your project? Contact us for a quote or a free strategy session.</p>
+                            
+                            <div class="space-y-6">
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-10 h-10 bg-brand-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                        <i class="fab fa-whatsapp text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-blue-200 uppercase tracking-wide">WhatsApp</p>
+                                        <a href="https://wa.me/923055074500" target="_blank" class="text-lg font-semibold hover:underline">+92 3055074500</a>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-10 h-10 bg-brand-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                        <i class="fas fa-envelope text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-blue-200 uppercase tracking-wide">Email</p>
+                                        <a href="mailto:mmubeenrasul@gmail.com" class="text-lg font-semibold hover:underline break-all">mmobeenrasul@gmail.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Social Links -->
+                        <div class="mt-10">
+                            <h4 class="text-sm font-semibold mb-3">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="w-8 h-8 rounded-full bg-brand-500 flex items-center justify-center hover:bg-white hover:text-brand-600 transition"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="w-8 h-8 rounded-full bg-brand-500 flex items-center justify-center hover:bg-white hover:text-brand-600 transition"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="w-8 h-8 rounded-full bg-brand-500 flex items-center justify-center hover:bg-white hover:text-brand-600 transition"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="p-10">
+                        <form action="#" method="POST" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                                <input type="text" id="name" class="mt-1 block w-full rounded-md border-gray-300 bg-gray-50 px-4 py-3 focus:border-brand-500 focus:bg-white focus:ring-0 transition" placeholder="Your Name">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                                <input type="email" id="email" class="mt-1 block w-full rounded-md border-gray-300 bg-gray-50 px-4 py-3 focus:border-brand-500 focus:bg-white focus:ring-0 transition" placeholder="your@email.com">
+                            </div>
+                            <div>
+                                <label for="service" class="block text-sm font-medium text-gray-700">Interested In</label>
+                                <select id="service" class="mt-1 block w-full rounded-md border-gray-300 bg-gray-50 px-4 py-3 focus:border-brand-500 focus:bg-white focus:ring-0 transition">
+                                    <option>Graphic Design</option>
+                                    <option>Meta Ads Management</option>
+                                    <option>Both</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                                <textarea id="message" rows="3" class="mt-1 block w-full rounded-md border-gray-300 bg-gray-50 px-4 py-3 focus:border-brand-500 focus:bg-white focus:ring-0 transition" placeholder="Tell us about your project..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-brand-900 text-white font-bold py-3 rounded-lg hover:bg-brand-800 transition transform hover:scale-[1.02]">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Floating WhatsApp Button for Mobile -->
+            <a href="https://wa.me/923055074500" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition z-50 animate-bounce">
+                <i class="fab fa-whatsapp text-3xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <span class="font-bold text-xl text-white">Mobeen<span class="text-brand-600">Digital</span>.</span>
+                <p class="text-xs mt-1">© 2023 All Rights Reserved.</p>
+            </div>
+            <div class="text-sm">
+                Designed & Developed by Mobeen Digital
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- AOS Library for Animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize Animations
+        AOS.init({
+            once: true,
+            offset: 100,
+        });
+
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
